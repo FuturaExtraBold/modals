@@ -1,44 +1,32 @@
 .close-button {
   position: absolute;
   z-index: 10000;
-  top: -16px;
-  right: -16px;
+  top: 20px;
+  right: 20px;
   width: 32px;
   height: 32px;
   margin: 0;
   cursor: pointer;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  background-color: #151515;
+  opacity: 0.5;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
   &__part {
     position: absolute;
-    top: 6px;
-    left: 13px;
+    top: 3px;
+    left: 15px;
     width: 2px;
-    height: 16px;
+    height: 26px;
     transform: rotate(45deg);
-    background-color: #ffffff;
+    background-color: #0d2e5b;
   }
   &__part:first-child {
     transform: rotate(-45deg);
   }
 }
-.close-button--grey {
-  top: 20px;
-  right: 20px;
-  opacity: 0.5;
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  .close-button__part {
-    top: 3px;
-    left: 15px;
-    height: 26px;
-    background-color: #0d2e5b;
-  }
-}
+
 @media (max-width: $sm-max) {
-  .close-button--grey {
+  .close-button {
     top: 5px;
     right: 5px;
   }
