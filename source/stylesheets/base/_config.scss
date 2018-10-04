@@ -1,0 +1,30 @@
+// Standard Colors
+$color-light: #f7f8f9;
+$color-primary: #2e91fc;
+$color-dark: #06243f;
+
+// Text Colors
+$text-light: #748493;
+$text-default: #556370;
+$text-dark: #373f47;
+
+// Typography
+$font-family-default: "proxima-nova", sans-serif;
+$font-size-default: 1.8rem;
+
+// Elements
+$border-color-default: #e5e9ed;
+$border-default: 1px solid $border-color-default;
+$border-radius-default: 5px;
+$box-shadow-default: 0 4px 18px 2px rgba(0,0,0,0.3);
+
+// Tweens
+$ease-in-out-expo: cubic-bezier(1,0,0,1);
+$transition-default: all 0.2s $ease-in-out-expo;
+
+// Header
+$header-height-desktop: 80px;
+
+// Levels
+$levels-grid-height: 200px;
+$levels-step-size: 120px;
