@@ -1,6 +1,7 @@
 (function($) {
 
   var $window = $(window);
+  var $body = $("body");
   var $modal = $(".modal");
   var $modalPositioner = $(".modal__positioner");
   var $catalyst = $(".btn");
@@ -8,10 +9,12 @@
 
   function open() {
     $modal.addClass("modal--open");
+    $body.addClass("overflow--hidden");
   }
 
   function close() {
     $modal.removeClass("modal--open");
+    $body.removeClass("overflow--hidden");
   }
 
   function eventHandler(event, selector) {
