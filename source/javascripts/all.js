@@ -1,1 +1,3 @@
-// This is where it all goes :)
+//= require vendor/_jquery
+
+//= require components/_modal
