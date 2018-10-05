@@ -5,11 +5,12 @@
   top: 0;
   left: 0;
   display: none;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
   height: 100%;
   transition: all 0.2s;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.5);
   &__container {
     margin-top: $container-gutter;
     margin-bottom: $container-gutter;
