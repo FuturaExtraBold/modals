@@ -9,11 +9,11 @@
   overflow-y: scroll;
   width: 100%;
   height: 100%;
-  transition: all 0.2s;
-  background-color: rgba(0,0,0,0.5);
-  &__container {
-    margin-top: $container-gutter;
-    margin-bottom: $container-gutter;
+  transition: all 2s;
+  background-color: rgba(0,0,0,0.8);
+  &__positioner {
+    padding: $container-gutter;
+    cursor: pointer;
   }
   &__content {
     position: relative;
@@ -21,6 +21,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 40px;
+    cursor: auto;
     border-radius: $border-radius-default;
     background-color: #ffffff;
   }
@@ -29,6 +30,13 @@
   display: block;
   .modal__content {
     animation: open 0.3s $ease-in-out-expo;
+  }
+}
+@media (max-width: $sm-max) {
+  .modal {
+    &__content {
+      padding: $container-gutter;
+    }
   }
 }
 @keyframes open {
